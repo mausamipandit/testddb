@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Test DDB with bootstrap table</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-table.min.css">
+
+<!-- Latest JQuery file -->
+<script src="js/jquery.min.js"></script>
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="bootstrap/locale/bootstrap-table-en-US.min.js"></script>
+<!-- data handling jquery code -->
+<script src="js/data.js"></script>
+
+</head>
+
+<body>
+
+<h3 style="padding-left:12px;"><b>Accommodations in Blue Mountains</b></h3>
+
+<div id="Total" style="padding-left:12px; font-weight:bold; padding-bottom:10px;"></div>
+<div style="width:90%; padding-left:10px;">	
+<table id="table1"  data-show-header="true" data-pagination="true" class="table table-bordered table-condensed table-responsive"
+           data-id-field="name"
+           data-page-list="[5, 10, 25, 50, 100, ALL]"
+           data-page-size="10">
+    <thead>
+    <tr>
+        <th class="col-md-2" data-field="product_name" data-formatter="">Product Name</th>
+        <th class="col-md-1" data-field="score">Score</th>
+        <th class="col-md-4" data-field="addresses" data-formatter="">Address</th>
+        <th class="col-md-3" data-field="owning_organisation_name">Owner Organisation</th>
+    </tr>
+    </thead>
+  <tbody>
+	</tbody>
+</table>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function () {
+   getdata("Region","Blue Mountains");
+});
+</script>
